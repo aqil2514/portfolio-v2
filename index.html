@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- MY STYLES CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- HEADER START -->
+    <nav class="navbar">
+      <div class="logo">
+        <h1>My Portfolio</h1>
+      </div>
+      <div class="nav-navbar">
+        <a href="#intro">Profil</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i data-feather="menu"></i>
+      </div>
+    </nav>
+    <div class="mobile-navbar">
+      <a href="#intro">Profil</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Kontak</a>
+    </div>
+    <!-- HEADER END -->
+
+    <!-- INTRO START -->
+    <section id="intro" class="intro">
+      <div class="container-intro">
+        <div class="img-container" onclick="activeIntro()">
+          <img class="img-src" src="img/me.jpg" alt="Aqil" />
+          <p class="img-desc">Lihat lebih lanjut</p>
+        </div>
+        <div class="identitas">
+            <h3>Identitas</h3>
+            <p>Nama : Muhamad Aqil Maulana</p>
+            <p>Panggilan : Aqil</p>
+            <p>Pendidikan Terakhir : S1</p>
+            <p>Jurusan : Tarjamah (Penerjemah Bahasa Arab)</p>
+            <p>IPK Sementara : 3.64</p>
+            <p>Keahlian : HTML, CSS, Javascript</p>
+        </div>
+        <div class="narative">
+            <h3>Assalamualaikum Wr. Wb.</h3>
+            <p>Halo! Saya Muhamad Aqil Maulana, akrab dipanggil Aqil. Saya kuliah di UIN Syarif Hidayatullah Jakarta dengan jurusan Tarjamah (Penerjemah Arab-Indonesia).
+            </p>
+            <p>Meski saya mengambil jurusan yang tidak ada kaitannya dengan Web Development, saya menguasai beberapa bahasa yang sering digunakan dalam pengembangan web. Untuk saat ini, saya baru Javascript, HTML, dan CSS.</p>
+            <p>Karya-karya saya menggunakan ketiga bahasa tersebut itu saya tampilkan di dalam Portfolio ini.</p>
+        </div>
+        <div class="button-intro">
+            <button onclick="deactiveIntro()">Tutup</button>
+        </div>
+        <h1 class="sapa">Halo! Saya Muhamad Aqil Maulana</h1>
+        <h1 class="sub-sapa">Seorang Web Developer</h1>
+      </div>
+    </section>
+    <!-- INTRO END -->
+
+    <!-- PORTFOLIO START -->
+    <sec id="portflio" class="portfolio-section">
+      <h1>Ini adalah beberapa <span> karya</span> saya</h1>
+      <div class="portfolio-container">
+        <div class="portfolio">
+          <figure>
+            <img src="img/port-1.png" alt="Portfolio">
+            <figcaption>Survey Form</figcaption>
+          </figure>
+          <span class="span-port">
+            <h1>Survey Form</h1>
+            <div class="identitas-port">
+              <p>Bahasa yang digunakan :</p>
+              <div class="identitas-port-img">
+                <img src="img/html-logo.png" alt="html">
+                <img src="img/css-logo.png" alt="html">
+              </div>
+            </div>
+            <div class="narasi-port">
+              <p>Ini adalah project pertama saya dengan menggunakan HTML dan CSS saja. Ini juga merupakan project dari persyaratan sertifikat FreeCodeCamp pada materi Responsive Web Design.</p>
+              <p>Di dalamnya, tersedia element table dengan beberapa input berbagai type.</p>
+            </div>
+            <div class="button-port">
+              <button class="tutup">Tutup</button>
+              <a href="https://aqil2514.github.io/survey-form/" target="_blank"> <button>Lihat Project</button></a>
+            </div>
+          </span>
+        </div>
+        <div class="portfolio">
+          <figure>
+            <img src="img/port-2.png" alt="Portfolio">
+            <figcaption>Tribute Page</figcaption>
+          </figure>
+          <span class="span-port">
+            <h1>Tribute Page</h1>
+            <div class="identitas-port">
+              <p>Bahasa yang digunakan :</p>
+              <div class="identitas-port-img">
+                <img src="img/html-logo.png" alt="html">
+                <img src="img/css-logo.png" alt="html">
+              </div>
+            </div>
+            <div class="narasi-port">
+              <p>Ini adalah project kedua saya dengan menggunakan HTML dan CSS saja. Ini juga merupakan project dari persyaratan sertifikat FreeCodeCamp pada materi Responsive Web Design.</p>
+              <p>Di dalamnya, tersedia beberapa hal yang menjelaskan tentang riwayat pendidikan saya.</p>
+            </div>
+            <div class="button-port">
+              <button class="tutup">Tutup</button>
+              <a href="https://aqil2514.github.io/tribute-page/" target="_blank"> <button>Lihat Project</button></a>
+            </div>
+          </span>
+        </div>
+        <div class="portfolio">
+          <figure>
+            <img src="img/port-3.png" alt="Portfolio">
+            <figcaption>Suwit Jawa</figcaption>
+          </figure>
+          <span class="span-port">
+            <h1>Suwit Jawa</h1>
+            <div class="identitas-port">
+              <p>Bahasa yang digunakan :</p>
+              <div class="identitas-port-img">
+                <img src="img/html-logo.png" alt="html">
+                <img src="img/css-logo.png" alt="html">
+                <img src="img/js-logo.png" alt="html">
+              </div>
+            </div>
+            <div class="narasi-port">
+              <p>Ini adalah project pertama saya dengan menggunakan HTML, CSS, dan Javascript. Ini adalah sebuah game sederhana tentang suit jawa.</p>
+              <p>Di dalamnya, sudah ditambahkan AI computer, sistem score, menang kalah, dan beberapa komponen lain.</p>
+            </div>
+            <div class="button-port">
+              <button class="tutup">Tutup</button>
+              <a href="https://aqil2514.github.io/suit-jawa/" target="_blank"> <button>Lihat Project</button></a>
+            </div>
+          </span>
+        </div>
+        <div class="portfolio">
+          <figure>
+            <img src="img/port-4.png" alt="Portfolio">
+            <figcaption>JS Documentation</figcaption>
+          </figure>
+          <span class="span-port">
+            <h1>JS Documentation</h1>
+            <div class="identitas-port">
+              <p>Bahasa yang digunakan :</p>
+              <div class="identitas-port-img">
+                <img src="img/html-logo.png" alt="html">
+                <img src="img/css-logo.png" alt="html">
+                <img src="img/js-logo.png" alt="html">
+              </div>
+            </div>
+            <div class="narasi-port">
+              <p>Sebenarnya, ini adalah project sertifikat Responsive Web Design di FreeCodeCamp. Namun, saya merevisinya agar tampilannya semakin enak dilihat dan Responsive jika dibuka pelalui smartphone.</p>
+            </div>
+            <div class="button-port">
+              <button class="tutup">Tutup</button>
+              <a href="https://aqil2514.github.io/technical-documentation-page/" target="_blank"> <button>Lihat Project</button></a>
+            </div>
+          </span>
+        </div>
+        <div class="portfolio">
+          <figure>
+            <img src="img/port-5.png" alt="Portfolio">
+            <figcaption>Rangkuman <br> Javascript</figcaption>
+          </figure>
+          <span class="span-port">
+            <h1>Rangkuman Javascript</h1>
+            <div class="identitas-port">
+              <p>Bahasa yang digunakan :</p>
+              <div class="identitas-port-img">
+                <img src="img/html-logo.png" alt="html">
+                <img src="img/css-logo.png" alt="html">
+                <img src="img/js-logo.png" alt="html">
+              </div>
+            </div>
+            <div class="narasi-port">
+              <p>Ini adalah rangkuman materi-materi Javascript yang pernah saya pelajari. Pembahasan yang ada di dalamnya tidak terlalu detil. Namun, saya mencantumkan sumber pada beberapa pembahasan materi.</p>
+            </div>
+            <div class="button-port">
+              <button class="tutup">Tutup</button>
+              <a href="https://aqil2514.github.io/Ringkasan-Javascript/" target="_blank"> <button>Lihat Project</button></a>
+            </div>
+          </span>
+        </div>
+        <div class="portfolio">
+          <figure>
+            <img src="img/port-6.png" alt="Portfolio">
+            <figcaption>My Dictionary</figcaption>
+          </figure>
+          <span class="span-port">
+            <h1>My Dictionary</h1>
+            <div class="identitas-port">
+              <p>Bahasa yang digunakan :</p>
+              <div class="identitas-port-img">
+                <img src="img/html-logo.png" alt="html">
+                <img src="img/css-logo.png" alt="html">
+                <img src="img/js-logo.png" alt="html">
+              </div>
+            </div>
+            <div class="narasi-port">
+              <p>Ini adalah project yang saya buat untuk mempermudah saya dalam menghafal beberapa kosa kata-kosa kata baru dalam sebuah cerita bahasa Inggris dan Arab.</p>
+              <p>Selain itu, ada juga tesnya berupa soal pilihan ganda.</p>
+            </div>
+            <div class="button-port">
+              <button class="tutup">Tutup</button>
+              <a href="https://aqil2514.github.io/kamus/" target="_blank"> <button>Lihat Project</button></a>
+            </div>
+          </span>
+        </div>
+        <div class="portfolio">
+          <figure>
+            <img src="img/port-7.png" alt="Portfolio">
+            <figcaption>Product Landing <br> Page</figcaption>
+          </figure>
+          <span class="span-port">
+            <h1>Product Landing Page</h1>
+            <div class="identitas-port">
+              <p>Bahasa yang digunakan :</p>
+              <div class="identitas-port-img">
+                <img src="img/html-logo.png" alt="html">
+                <img src="img/css-logo.png" alt="html">
+                <img src="img/js-logo.png" alt="html">
+              </div>
+            </div>
+            <div class="narasi-port">
+              <p>Sebenarnya, ini adalah project sertifikat Responsive Web Design di FreeCodeCamp. Namun, saya merevisinya agar tampilannya semakin enak dilihat dan Responsive jika dibuka pelalui smartphone.</p>
+            </div>
+            <div class="button-port">
+              <button class="tutup">Tutup</button>
+              <a href="https://aqil2514.github.io/product-landing-page/#product" target="_blank"> <button>Lihat Project</button></a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </sec>
+
+    <!-- PORTFOLIO END -->
+
+    <!-- FEATHER ICON  -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- MY JAVASCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
