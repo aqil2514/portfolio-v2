@@ -9,6 +9,9 @@ const sapa = document.querySelector(".sapa");
 const subSapa = document.querySelector(".sub-sapa");
 const navbar = document.querySelector(".navbar");
 const mobileNavbar = document.querySelector(".mobile-navbar");
+const halaman = document.querySelector('.halaman');
+const containerPort = document.querySelectorAll('.portfolio-container');
+let currentSide = 0;
 document.onkeydown = keyPress;
 
 function activeIntro() {
@@ -35,6 +38,28 @@ function deactiveIntro() {
   subSapa.classList.replace("sub-sapa-active", "sub-sapa");
 }
 
+function nextSide(){
+  for(const cp of containerPort){
+    if(currentSide == containerPort.length){
+      alert('Ini halaman terakhir');
+      return;
+    }else{
+    cp.classList.toggle('port-disactive');
+    currentSide++;}
+  }
+}
+
+function prevSide(){
+  for(const cp of containerPort){
+    if(currentSide == 0){
+      alert('Ini halaman pertama');
+      return;
+    }else{
+    cp.classList.toggle('port-disactive');
+    currentSide--;}
+  }
+}
+
 const portfolioDisactive = Array.from(document.getElementsByClassName("portfolio"));
 const portToActive = Array.from(document.querySelectorAll('.portfolio figure'));
 const closePort = Array.from(document.getElementsByClassName("tutup"));
@@ -50,7 +75,6 @@ closePort.forEach((b) => {
         portfolioDisactive.forEach(a=> a.classList.replace('portfolio-active', 'portfolio'));
     })
 })
-
 
 //keyPress
 function keyPress(e) {
